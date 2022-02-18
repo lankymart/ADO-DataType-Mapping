@@ -1,9 +1,9 @@
 The following table shows the ADO Data Type mapping between Visual Basic, Access, SQL Server, Oracle, and the .NET Framework.
 
 | ADO <br /> DataType <br /> Enum	| ADO <br /> DataType <br /> Enum <br /> Value | Mapped <br /> Data Type | SQL <br /> Server	| Size | Access |	Oracle | Visual Basic 6.0 |
-| --------- | --------- | -------- | -------- | ---- | ------ | ------ | ---------------- |
+| --- | --: | --- | --- | --: | --- | --- | --- |
 | adBigInt | 20 | Int64 <br /> SqlDbType.BigInt [^10] <br /> OleDbType.BigInt [^11] <br /> DBTYPE_I8 [^9] |	bigint [^9] | 8 ||| Variant |
-| adBinary | 128 | Byte[] <br /> SqlDbType.VarBinary [^10] <br /> OleDbType.Binary [^11] <br /> DBTYPE_BYTES [^9] | binary <br /> timestamp | 50 <br /> 8 |	Binary <br /> LongBinary | Raw 7 | Variant |
+| adBinary | 128 | Byte[] <br /> SqlDbType.VarBinary [^10] <br /> OleDbType.Binary [^11] <br /> DBTYPE_BYTES [^9] | binary <br /> timestamp | 50 <br /> 8 |	Binary <br /> LongBinary | Raw [^7] | Variant |
 | adBoolean |	11 | Boolean <br /> SqlDbType.Bit [^10] <br /> OleDbType.Boolean [^11] <br /> DBTYPE_BOOL [^9] | bit | 1 <br /> 2 |	Bit <br /> YesNo || Boolean |
 | adBSTR | 8 | String <br /> OleDbType.BSTR [^11] ||||||
 | adChapter	| 136 |	(DataReader) |||||| 	 
