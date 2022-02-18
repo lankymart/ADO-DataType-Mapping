@@ -1,7 +1,7 @@
 The following table shows the ADO Data Type mapping between Visual Basic, Access, SQL Server, Oracle, and the .NET Framework.
 
-| ADO DataType Enum	| ADO DataType Enum Value | Mapped Data Type | SQL Server	| Size | Access |	Oracle | Visual Basic 6.0 |
-| ----------------- | ----------------------- | ---------------- | ---------- | ---- | ------ | ------ | ---------------- |
+| ADO <br /> DataType <br /> Enum	| ADO <br /> DataType <br /> Enum <br /> Value | Mapped <br /> Data Type | SQL <br /> Server	| Size | Access |	Oracle | Visual Basic 6.0 |
+| --------- | --------- | -------- | -------- | ---- | ------ | ------ | ---------------- |
 | adBigInt | 20 | Int64 <br /> SqlDbType.BigInt [^10] <br /> OleDbType.BigInt [^11] <br /> DBTYPE_I8 [^9] |	bigint [^9] | 8 ||| Variant |
 | adBinary | 128 | Byte[] <br /> SqlDbType.VarBinary [^10] <br /> OleDbType.Binary [^11] <br /> DBTYPE_BYTES [^9] | binary <br /> timestamp | 50 <br /> 8 |	Binary <br /> LongBinary | Raw 7 | Variant |
 | adBoolean |	11 | Boolean <br /> SqlDbType.Bit [^10] <br /> OleDbType.Boolean [^11] <br /> DBTYPE_BOOL [^9] | bit | 1 <br /> 2 |	Bit <br /> YesNo || Boolean |
@@ -26,65 +26,22 @@ The following table shows the ADO Data Type mapping between Visual Basic, Access
 | adLongVarBinary | 205 | Byte[] <br /> SqlDbType.VarBinary [^10] <br /> OleDbType.LongVarBinary [^11] <br /> DBTYPE_BYTES [^9] | image | 2147483647 | OLEObject | Long Raw [^7] <br /> Blob [^8] | Variant |
 | adLongVarChar | 201 | String <br /> SqlDbType.VarChar [^10] <br /> OleDbType.LongVarChar [^11] <br /> DBTYPE_STR[^9] | text | 2147483647 | Memo [^1], [^2] <br /> Hyperlink [^1], [^2] | Long [^7] <br /> Clob [^8] |	String |
 | adLongVarWChar | 203 | String <br /> SqlDbType.NText [^10] <br /> OleDbType.VarWChar [^11] <br /> DBTYPE_WSTR [^9] | ntext [^5] |	1073741823 | Memo [^3] <br /> Hyperlink [^3] | NClob [^8] |	String |
-adNumeric	131	Decimal
-SqlDbType.Decimal 10
-OleDbType.Decimal 11
-DBTYPE_NUMERIC 9	decimal
-numeric
-9
-Decimal 3	Decimal
-Integer
-Number
-SmallInt	Variant 6
-adPropVariant	138	Object
-OleDbType.PropVariant 11	 	 	 	 	 
-adSingle	4	Single
-SqlDbType.Real 10
-OleDbType.Single 11
-DBTYPE_R4 9	real	4	Single	 	Single
-adSmallInt	2	Int16,
-SqlDbType.SmallInt 10
-OleDbType.SmallInt 11
-DBTYPE_I2 9	smallInt	2	Integer
-Short	 	Integer
-adTinyInt	16	Byte
-OleDbType.TinyInt 11	 	 	 	 	 
-adUnsignedBigInt	21	UInt64
-OleDbType.UnsignedBigInt 11	 	 	 	 	 
-adUnsignedInt	19	UInt32
-OleDbType.UnsignedInt 11	 	 	 	 	 
-adUnsignedSmallInt	18	UInt16
-OleDbType.UnsignedSmallInt 11	 	 	 	 	 
-adUnsignedTinyInt	17	Byte
-SqlDbType.TinyInt 10
-OleDbType.UnsignedTinyInt 11
-DBTYPE_UI1 9	tinyInt	1	Byte	 	Byte
-adUserDefined	132	 	 	 	 	 	 
-adVarBinary	204	Byte[]
-SqlDbType.VarBinary 10
-OleDbType.VarBinary 11
-DBTYPE_BYTES 9	varbinary	50	ReplicationID 1	 	Variant
-adVarChar	200	String
-SqlDbType.VarChar 10
-OleDbType.VarChar 11
-DBTYPE_STR 9	varchar	x	Text 1, 2
-LongText	VarChar	String
-adVariant	12	Object
-SqlDbType.Variant 10
-OleDbType.Variant 11
-DBTYPE_VARIANT 9
-DBTYPE_SQLVARIANT 9	sql_variant 9	8016	 	VarChar2	Variant
-adVarNumeric	139	OleDbType.VarNumeric 11	 	 	 	 	 
-adVarWChar	202	String
-SqlDbType.NVarChar 10
-OleDbType.VarWChar 11
-DBTYPE_WSTR 9	nvarchar 5	x
-Text 3	NVarChar2	String
-adWChar	130	String
-SqlDbType.NChar 10
-OleDbType.WChar 11
-DBTYPE_WSTR 9	nchar 5	x	 	 	String
-Top of Page
+| adNumeric | 131 | Decimal <br /> SqlDbType.Decimal [^10] <br /> OleDbType.Decimal [^11] <br /> DBTYPE_NUMERIC [^9] | decimal <br /> numeric | 9 | Decimal [^3]	Decimal <br /> Integer <br /> Number <br /> SmallInt | Variant [^6] |
+| adPropVariant | 138 | Object <br /> OleDbType.PropVariant [^11] ||||||
+| adSingle | 4 | Single <br /> SqlDbType.Real [^10] <br /> OleDbType.Single [^11] <br /> DBTYPE_R4 [^9] |	real | 4 | Single || Single |
+| adSmallInt | 2 | Int16 <br /> SqlDbType.SmallInt [^10] <br /> OleDbType.SmallInt [^11] <br /> DBTYPE_I2 [^9] | smallInt | 2 | Integer | Short | Integer |
+| adTinyInt | 16 | Byte <br /> OleDbType.TinyInt [^11] ||||||
+| adUnsignedBigInt | 21 | UInt64 <br /> OleDbType.UnsignedBigInt [^11] ||||||
+| adUnsignedInt	| 19 | UInt32 <br /> OleDbType.UnsignedInt [^11] ||||||	 	 	 	 	 
+| adUnsignedSmallInt | 18 | UInt16 <br /> OleDbType.UnsignedSmallInt [^11] ||||||
+| adUnsignedTinyInt | 17 | Byte <br /> SqlDbType.TinyInt [^10] <br /> OleDbType.UnsignedTinyInt [^11] <br /> DBTYPE_UI1 [^9] | tinyInt | 1 | Byte || Byte |
+| adUserDefined | 132	||||||| 	 	 	 	 	 
+| adVarBinary | 204 | Byte[] <br /> SqlDbType.VarBinary [^10] <br /> OleDbType.VarBinary [^11] <br /> DBTYPE_BYTES [^9] | varbinary	| 50 | ReplicationID [^1] | Variant |
+| adVarChar | 200 | String <br /> SqlDbType.VarChar [^10] <br /> OleDbType.VarChar [^11] <br /> DBTYPE_STR [^9] | varchar | x | Text [^1], [^2] <br /> LongText	| VarChar | String |
+| adVariant | 12 | Object <br /> SqlDbType.Variant [^10] <br /> OleDbType.Variant [^11] <br /> DBTYPE_VARIANT [^9] <br /> DBTYPE_SQLVARIANT [^9] | sql_variant [^9] | 8016 || VarChar2	| Variant |
+| adVarNumeric | 139 | OleDbType.VarNumeric [^11] ||||||	 	 	 	 
+| adVarWChar | 202 | String <br /> SqlDbType.NVarChar [^10] <br /> OleDbType.VarWChar [^11] <br />DBTYPE_WSTR [^9] | nvarchar [^5] | x | Text [^3] | NVarChar2 | String |
+| adWChar	| 130 | String <br /> SqlDbType.NChar [^10] <br /> OleDbType.WChar [^11] <br /> DBTYPE_WSTR [^9] | nchar [^5] | x ||| String |
 
 [^1]: ODBC Driver (3.51.171300): Microsoft Access Driver (*.mdb), Access 97 (3.5 format)
 [^2]: OLE DB Provider: Microsoft.Jet.OLEDB.3.51, Access 97 (3.5 format)
