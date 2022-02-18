@@ -56,3 +56,5 @@ The following table shows the ADO Data Type mapping between Visual Basic, Access
 [^11]: OLE DB .NET Data Provider (via System.Data.OleDb)
 
 >Note: "User Defined" data types (e.g. ID, TID, EmpID, SysName) are not shown on this diagram.
+
+Attribution to [Carl Prothman](https://web.archive.org/web/20180916001055/http://www.carlprothman.net/ContactMe/tabid/79/Default.aspx) (carl @ prothman.org) - [Original Url](https://web.archive.org/web/20180901201211/http://carlprothman.net/Technology/DataTypeMapping/tabid/97/Default.aspx)
