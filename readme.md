@@ -1,3 +1,5 @@
+## Data Type Mapping in ADODB ##
+
 The following table shows the ADO Data Type mapping between Visual Basic, Access, SQL Server, Oracle, and the .NET Framework.
 
 | ADO <br /> DataType <br /> Enum	| ADO <br /> DataType <br /> Enum <br /> Value | Mapped <br /> Data Type | SQL <br /> Server	| Size | Access |	Oracle | Visual Basic 6.0 |
